@@ -1,0 +1,2 @@
+- documentar
+- hacer

@@ -1,0 +1,48 @@
+* { box-sizing: border-box }
+
+body {
+  font-family:Arial, sans-serif;
+}
+
+
+
+
+
+@mixin clearfix() {
+    & {
+        *zoom: 1;
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+.clearfix {
+  @include clearfix();
+}
+
+.inline-block {
+  display:inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+//http://stackoverflow.com/a/5078358/1040291
+.reset-inline-block {
+  letter-spacing: -.31em;
+  word-spacing: -.43em;
+}
+
+
+
+
+
+.ttl { text-align:left; }
+.ttr { text-align:right; }
+.ttc { text-align:center; }

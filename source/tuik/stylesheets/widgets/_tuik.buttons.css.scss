@@ -1,0 +1,75 @@
+.btn {
+  @extend .inline-block;
+
+  @include background(  linear-gradient(top, $clickable-gradient-colorStart, $clickable-gradient-colorEnd) );
+  
+  color:$btn-color;
+  font-weight:bold;
+  text-decoration:none;
+  padding:.4em 1em;
+  border-radius:$clickable-border-radius;
+  border:$clickable-border-width solid $clickable-border-color;
+  text-shadow:1px 1px 0px rgba(255,255,255,0.4);
+  cursor:pointer;
+  
+  &.ico {
+    padding-left:.6em;
+    padding-right:.6em;
+  }
+}
+
+.btn:hover {
+  color:$btn-color-hover;
+  @include background(  linear-gradient(top, $clickable-gradient-colorStart-hover, $clickable-gradient-colorEnd-hover) );
+  text-shadow:1px 1px 0px rgba(255,255,255,0.6);
+}
+
+.btn:active {
+  @include background(  linear-gradient(top, $clickable-gradient-colorEnd, $clickable-gradient-colorStart) );
+}
+//
+//.btn-multi {
+//  padding:0;
+//}
+//
+//.btn-multi > * {
+//  @extend .btn;
+//  border:none;
+//  border-radius:0;
+//  float:left;
+//  
+////  border-left:1px solid red;
+//}
+
+
+.btn-group {
+  @extend .clearfix;
+  border-radius:$clickable-border-radius;
+  border:$clickable-border-width solid $clickable-border-color;
+  @extend .inline-block;
+  @include background(  linear-gradient(top, $clickable-gradient-colorStart, $clickable-gradient-colorEnd) );
+}
+
+.btn-group > * {
+  @extend .btn;
+  float:left;
+  display:block;
+  border:none;
+  border-radius:0;
+  border-right:$clickable-border-width solid $clickable-border-color;
+}
+
+.btn-group > * > * {
+  text-decoration:none;
+  color:$btn-color;
+}
+
+.btn-group > *:last-child {
+  border-right:none;
+  border-radius:0 $clickable-border-radius $clickable-border-radius 0;
+}
+
+.btn-group > *:first-child {
+  border-radius:$clickable-border-radius 0 0 $clickable-border-radius;
+}
+

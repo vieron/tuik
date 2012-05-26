@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tuik</title> 
+  
+  <%= stylesheet_link_tag "tuik.css" %>
+  
+  <%= stylesheet_link_tag "../../tests/libs/qunit/qunit.css" %>
+
+  <%= javascript_include_tag "libs/jquery-1.7.2" %>
+  <%= javascript_include_tag "../../tests/libs/qunit/qunit.js" %>
+  
+  <%= yield_content :js %>
+  
+</head>
+<body>
+  <h1 id="qunit-header"><%= yield_content :title %> - Test Suite</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+    
+    <%= yield %>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<% content_for :head do %>
+  <title>tuik.tabs</title>
+<% end%>
+
+<% content_for :js do %>
+  <script type="text/javascript" charset="utf-8">
+    $(function(){
+
+      $('.t-tabs').tuikTabs();
+
+    });
+  </script>
+
+<% end%>
+
+
+
+<div class="wrapper">
+	
+	
+	<div class="t-tabs">
+		<ul>
+			<li><a href="#item_1">Item 1</a></li>
+			<li><a href="#item_2">Item 2</a></li>
+			<li><a href="#item_3">Item 3</a></li>
+		</ul>
+		
+    <div class="t-tabs-content">
+      <div id="item_1">
+        Content related with Item 1
+      </div>
+      <div id="item_2">
+        Content related with Item 2
+      </div>
+      <div id="item_3">
+        Content related with Item 3
+      </div>
+    </div>
+		
+	</div>
+	
+</div>

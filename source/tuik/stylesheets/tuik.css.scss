@@ -1,0 +1,60 @@
+@import "compass";
+
+$default-border-radius: 3px;
+
+$link-color:         #0099FF;
+$link-hover-color:   #0099FF;
+
+$clickable-color:#666666;
+$clickable-color-hover:darken($clickable-color, 2%);
+$clickable-border-color: #999999;
+$clickable-border-radius: 2px;
+$clickable-border-width: 1px;
+$clickable-border-color-hover: $clickable-border-color;
+
+$clickable-gradient-colorStart:#E7E7E7;
+$clickable-gradient-colorEnd: #CCCCCC;
+$clickable-gradient-colorStart-hover:darken($clickable-gradient-colorStart, 2%);
+$clickable-gradient-colorEnd-hover: darken($clickable-gradient-colorEnd, 2%);
+
+
+$btn-color:#666666;
+$btn-color-hover:darken($btn-color, 2%);
+
+$widget-border-width : 1px;
+$widget-border-type : solid;
+$widget-border-color : #999999;
+$widget-border-radius : 3px;
+
+$widget-content-background : #FFF ;
+$widget-header-background : #D4D4D4 ;
+$widget-footer-background : #000;
+
+
+
+
+
+$link-focus-color:   false;
+$link-active-color:  false;
+$link-visited-color: false;
+
+$font-color:  #999999;
+$font-family: Arial, sans-serif;
+$base-font-size:   1.4em;
+$base-line-height: 1.2em;
+
+
+@import "partials/_tuik.normalize.css.scss";
+@import "partials/_tuik.core.css.scss";
+
+@import "widgets/_tuik.buttons.css.scss";
+@import "widgets/_tuik.popovers.css.scss";
+@import "widgets/_tuik.tabs.css.scss";
+
+@import "partials/_tuik.mediaqueries.css.scss";
+
+
+
+// @include global-reset;
+
+

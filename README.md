@@ -23,10 +23,10 @@ _(Coming soon)_
 `bundle install`
 
 ### Running local server
-middleman server
+`middleman server`
 
 ### Build distribution
-middleman build
+`middleman build`
 
 ### Run Qunit tests with phantomjs
 

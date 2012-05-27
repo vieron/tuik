@@ -36,22 +36,26 @@
         font-family: Consolas, monaco, monospace;
         font-size:15px;
         color:#777777;
-        
+      
+      }
+      
+      #content {
+        max-width:644px;
+        margin:0 auto;
+        height:0;
         -webkit-perspective:600px;
         -webkit-perspective-origin:50% 0;
         -webkit-transform-style:preserve-3d;
       }
       
       .wrapper {
-        max-width:644px;
-        margin:0 auto;
         
 /*        -webkit-transform: translate3d(100px, 100px, 0)*/
         
         -webkit-transform:rotateY(-5deg) translate3d(-100px, 20px, -100px);
         -webkit-transition: -webkit-transform .5s ;
       }
-      
+       
       .wrapper:hover {
         -webkit-transform:rotateY(0);
       }
@@ -100,63 +104,80 @@
       }
       
       
+      .under-development {
+        background-color:#D90000;
+        width:460px;
+        padding:10px 0;
+        color:#FFF;
+        font-size:15px;
+        text-align:center;
+        left:50%;
+        top:0;
+        position:absolute;
+        margin-left:-230px;
+        font-weight:normal;
+      }
       
     </style>
 
   </head>
 
   <body class="">
+    
+    
+      <strong class="under-development">under development, not valid for production use yet!</strong>
+      <div id="content">
+        <div class="wrapper">
+          <h1>tuik</h1>
+          <h2>themable user interface kit</h2>
 
-      <div class="wrapper">
-        <h1>tuik</h1>
-        <h2>themable user interface kit</h2>
-        
-        
-        <p>tuik is created with the intention of being a component-based framework to build applications focused on detailed and rich interfaces. </p>
-        <p>tuik is build on the top of jQuery and each tuik component acts as a jQuery plugin.</p>
-        
-        <h3>Characteristics</h3>  
-        <dl>
-          <dt>Full Client Stack</dt>  
-          <dd>tuik uses the main web standards technologies, HTML5, CSS, and Javascript. Isn`t only a CSS or JS framework, it`s based on components and usually they use a mix of all these technologies.
-          </dd>
-          <dt>Component-based.</dt>  
-          <dd>Each component can be used separately. No need to add entire library if you only want to use a pair of components. Use only CSS/JS/HTML you need.
-          </dd>
-          <dt>Themable.</dt>  
-          <dd>Oriented to be themable. To build themes according to the project. All theme-related styles are stored in sass variables for easy customization and most measures are given in em`s.
-          </dd>
-          <dt>Modern browser support.</dt>  
-          <dd>tuik focuses on modern browsers. In other words IE6 and IE7 are not supported.
-          </dd>
-          <dt>Mobile friendly.</dt>  
-          <dd>not being a mobile specific framework, tuik uses mobile optimized techniques for  smooth animations, touch support...
-          </dd>
-          
-          <dt>Focuses on semantic.</dt>
-          <dd></dd>  
-          
-        </dl> 
-        
-        <h3>Dependencies</h3>
-        
-        <dl>
-          <dt>jQuery</dt>  
-          <dd><a href="http://www.jquery.com">http://www.jquery.com</a></dd>
-          <dt>jQuery.animate-enhanced</dt>  
-          <dd><a href="http://playground.benbarnett.net/jquery-animate-enhanced/">http://playground.benbarnett.net/jquery-animate-enhanced/</a></dd>
-        </dl>  
-        
-        
-        <h3>In the oven!</h3>
-        
-        <p>Some designed components.</p>
-        
 
-        <p><img src="tuik-components.png" width="649" height="837" alt="Tuik Components"></p>
+          <p>tuik is created with the intention of being a component-based framework to build applications focused on detailed and rich interfaces. </p>
+          <p>tuik is build on the top of jQuery and each tuik component acts as a jQuery plugin.</p>
+
+          <h3>Characteristics</h3>  
+          <dl>
+            <dt>Full Client Stack</dt>  
+            <dd>tuik uses the main web standards technologies, HTML5, CSS, and Javascript. Isn`t only a CSS or JS framework, it`s based on components and usually they use a mix of all these technologies.
+            </dd>
+            <dt>Component-based.</dt>  
+            <dd>Each component can be used separately. No need to add entire library if you only want to use a pair of components. Use only CSS/JS/HTML you need.
+            </dd>
+            <dt>Themable.</dt>  
+            <dd>Oriented to be themable. To build themes according to the project. All theme-related styles are stored in sass variables for easy customization and most measures are given in em`s.
+            </dd>
+            <dt>Modern browser support.</dt>  
+            <dd>tuik focuses on modern browsers. In other words IE6 and IE7 are not supported.
+            </dd>
+            <dt>Mobile friendly.</dt>  
+            <dd>not being a mobile specific framework, tuik uses mobile optimized techniques for  smooth animations, touch support...
+            </dd>
+
+            <dt>Focuses on semantic.</dt>
+            <dd></dd>  
+
+          </dl> 
+
+          <h3>Dependencies</h3>
+
+          <dl>
+            <dt>jQuery</dt>  
+            <dd><a href="http://www.jquery.com">http://www.jquery.com</a></dd>
+            <dt>jQuery.animate-enhanced</dt>  
+            <dd><a href="http://playground.benbarnett.net/jquery-animate-enhanced/">http://playground.benbarnett.net/jquery-animate-enhanced/</a></dd>
+          </dl>  
+
+
+          <h3>In the oven!</h3>
+
+          <p>Some designed components.</p>
+
+
+          <p><img src="tuik-components.png" width="649" height="837" alt="Tuik Components"></p>
+
+        </div><!-- .wrapper -->
         
-      </div><!-- .wrapper -->
-      
+      </div>      
   </body>
 </html>
 

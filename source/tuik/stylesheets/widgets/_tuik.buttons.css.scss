@@ -20,9 +20,9 @@
   text-shadow:1px 1px 0px rgba(255,255,255,0.4);
   cursor:pointer;
   
-  &.ico {
-    padding-left:.6em;
-    padding-right:.6em;
+  &.icon {
+    padding-left: .8em;
+    padding-right: .4em;
   }
 }
 
@@ -35,19 +35,9 @@
 .btn:active {
   @include background(  linear-gradient(top, $clickable-gradient-colorEnd, $clickable-gradient-colorStart) );
 }
-//
-//.btn-multi {
-//  padding:0;
-//}
-//
-//.btn-multi > * {
-//  @extend .btn;
-//  border:none;
-//  border-radius:0;
-//  float:left;
-//  
-////  border-left:1px solid red;
-//}
+
+
+
 
 
 .btn-group {
@@ -65,6 +55,11 @@
   border:none;
   border-radius:0;
   border-right:$clickable-border-width solid $clickable-border-color;
+}
+
+.btn-group > div {
+  padding-left:.8em;
+  padding-right:.8em;
 }
 
 .btn-group > * > * {

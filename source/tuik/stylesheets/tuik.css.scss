@@ -46,13 +46,14 @@ $base-line-height: 1.2em;
 
 @import "partials/_tuik.normalize.css.scss";
 @import "partials/_tuik.core.css.scss";
+@import "partials/_tuik.typography.css.scss";
+@import "partials/_tuik.icons.css.scss";
 
 @import "widgets/_tuik.buttons.css.scss";
 @import "widgets/_tuik.popovers.css.scss";
 @import "widgets/_tuik.tabs.css.scss";
 
 @import "partials/_tuik.mediaqueries.css.scss";
-
 
 
 // @include global-reset;

@@ -3,8 +3,10 @@
 .popover {
   border:$widget-border-width $widget-border-type $widget-border-color;
   border-radius:$widget-border-radius;
-  min-width:300px;
-  max-width:80%;
+}
+
+.popover .icon {
+  min-width: 0;
 }
 
 .popover article,
@@ -173,13 +175,13 @@
 
 
 .btn-group .popover {
-//  display:none;
   left:-999px;
   position:absolute!important;
-  
+  width:300px;
 }
 
-.btn-group .ico, //remove this line 
+.btn-group > div,
+.btn-group .popover-wrapper, //remove this line 
 .btn-group .active {
   position:relative;
 }

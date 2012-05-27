@@ -39,9 +39,14 @@
           
           this.open = false;
           this.is_inside_btn = this.element.closest('.btn-group, .btn').length;
-          this.element_target = this.element.parent();
+          this.element_target = this.element.parent().addClass('popover-wrapper');
           
-          if (this.is_inside_btn) this.init();
+          
+          if (!this.is_inside_btn) return false;
+          
+          this.init();
+          
+          console.log(this.element_target);
           
       }
       

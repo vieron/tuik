@@ -26,6 +26,26 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+helpers do
+  # Generates a styleguide block.
+  def styleguide_block(section, &block)
+    @section = @styleguide.section(section)
+    @example_html = kss_capture{ block.call }
+    @_out_buf << partial('styleguide/block')
+  end
+
+  # Captures the result of a block within an erb template without spitting it
+  # to the output buffer.
+  def kss_capture(&block)
+    out, @_out_buf = @_out_buf, ""
+    yield
+    @_out_buf
+  ensure
+    @_out_buf = out
+  end
+end
+
+
 ###
 # Page command
 ###
@@ -39,7 +59,16 @@
 # page "/path/to/file.html", :layout => :otherlayout
 #
 
-page "/tests/*", :layout => "qunit"
+
+page "/tests/*", :layout => "layouts/qunit"
+
+require "kss"
+page "/styleguide/*", :layout => "layouts/styleguide" do
+  @styleguide = Kss::Parser.new('source/tuik/stylesheets')
+end
+
+page "*", :layout => "layouts/layout"
+
 
 # A path which all have the same layout
 # with_layout :admin do

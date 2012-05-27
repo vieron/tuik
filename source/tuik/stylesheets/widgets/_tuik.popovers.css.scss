@@ -1,3 +1,5 @@
+
+
 .popover {
   border:$widget-border-width $widget-border-type $widget-border-color;
   border-radius:$widget-border-radius;
@@ -28,9 +30,6 @@
 .popover footer {
   background:$widget-footer-background;
 }
-
-
-
 
 ._popover-arrow {
   background:$widget-content-background;
@@ -177,6 +176,7 @@
 //  display:none;
   left:-999px;
   position:absolute!important;
+  
 }
 
 .btn-group .ico, //remove this line 
@@ -186,10 +186,57 @@
 
 .btn-group .active {
   z-index:200;
+  
+  -webkit-perspective:500px;
+  	   -moz-perspective:500px;
+
+  	-webkit-perspective-origin:50% 0;
+  	   -moz-perspective-origin:50% 0;
 }
 
 .btn-group .active .popover{
   display:block!important;
+
+
+//  -webkit-animation:opacityIn .8s ease-in-out 0 backwards;
+//  -moz-animation:opacityIn .8s ease-in-out 0 backwards;
+}
+
+.btn-group .active .popover.left,
+.btn-group .active .popover.right{
+  -webkit-animation:rotX .6s ease-in-out 0 backwards;
+  -moz-animation:rotX .6s ease-in-out 0 backwards;
+}
+
+.btn-group .active .popover.top,
+.btn-group .active .popover.bottom{
+  -webkit-animation:rotY .6s ease-in-out 0 backwards;
+  -moz-animation:rotY .6s ease-in-out 0 backwards;
+}
+
+@-webkit-keyframes rotX{
+	from{-webkit-transform:rotateX(-89deg);}
+	40%{-webkit-transform:rotateX(45deg);}
+	60%{-webkit-transform:rotateX(-23deg);}
+	to{-webkit-transform:rotateX(0);}
+} 
+
+@-webkit-keyframes rotY{
+	from{-webkit-transform:rotateY(-89deg);}
+	40%{-webkit-transform:rotateY(45deg);}
+	60%{-webkit-transform:rotateY(-23deg);}
+	to{-webkit-transform:rotateY(0);}
+}
+
+
+@-webkit-keyframes opacityIn{
+	0%   { opacity: 0; }
+  100% { opacity: 1; }
+} 
+
+@-webkit-keyframes opacityOut{
+	0%   { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 

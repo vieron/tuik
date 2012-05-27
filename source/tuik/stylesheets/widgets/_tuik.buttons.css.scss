@@ -1,3 +1,11 @@
+// Your standard form button.
+//
+// :hover    - Highlights when hovering.
+// :disabled - Dims the button when disabled.
+// .primary  - Indicates button is the primary action.
+// .smaller  - A smaller button
+//
+// Styleguide 5.1.1
 .btn {
   @extend .inline-block;
 

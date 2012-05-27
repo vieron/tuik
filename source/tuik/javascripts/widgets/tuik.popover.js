@@ -93,13 +93,13 @@
           if (this.options.onlyOneOpened) Plugin.closeAll();
           this.open = true;
           this.updatePosition();
-          this.element_target.addClass('active');
+          this.element_target.addClass('active').removeClass('closed');;
           if (this.options.closeWhenClickOutside) $body.on('click', Plugin.closeAll);
         },
         
         hide : function(){
           this.open = false;
-          this.element_target.removeClass('active');
+          this.element_target.removeClass('active').addClass('closed');
           if (this.options.closeWhenClickOutside) $body.off('click', Plugin.closeAll);
         },
         

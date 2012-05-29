@@ -22,15 +22,45 @@
       raises(block, [expected], [message])
   */
 
-  module('tuik.popover', {
+  module('tuik.core', {
     setup: function() {
+      
+       $.tuik.component('tabs', {
+          defaults : {
+            pordefecto : 1
+          },
+          methods : {
+            _create : function(){
+              this.$element.css('background', 'red');
+            },
+            andar : function(){
+              alert('andar');
+            },
+            ladrar : function(){
+              alert('andar');
+            }
+          },
+          subscriptions : { //subcriptions are not updated or retrieved with .option() method. You need to manage it manually
+            'create' : function(){
+              console.log('tabs create subscription callback', 'this:', this);
+            }
+          }
+        });
+      
       this.element = $('#qunit-fixture').children();
     }
   });
 
   test('is chainable', 1, function() {
     // Not a bad test to run on collection methods.
-    strictEqual(this.element.popover(), this.element, 'should be chaninable');
+    
+    strictEqual(this.element.tabs(), this.element, 'should be chaninable');
+  });
+  
+  test('returns api', 1, function() {
+    // Not a bad test to run on collection methods.
+    
+    strictEqual(typeof this.element.tabs().data('tabs'), "object" , 'should be chaninable');
   });
   // 
   // test('has public api', 1, function() {

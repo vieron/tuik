@@ -1,0 +1,33 @@
+{
+  "name": "tuik",
+  "title": "tuik",
+  "description": "themable user interface kit",
+  "version": "0.1.0",
+  "homepage": "https://github.com/vieron/tuik",
+  "author": {
+    "name": "vieron",
+    "email": "javiersanchezmarin@gmail.com",
+    "url": "vieron.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vieron/tuik.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vieron/tuik/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/vieron/tuik/blob/master/LICENSE-MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/vieron/tuik/blob/master/LICENSE-GPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.5"
+  },
+  "keywords": []
+}

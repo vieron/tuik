@@ -38,25 +38,80 @@
 
     <!-- more tags for your 'head' to consider h5bp.com/d/head-Tips -->
 
-    <link href="tuik/stylesheets/tuik.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../tuik/stylesheets/tuik.css" media="screen" rel="stylesheet" type="text/css" />
 
-    <script src="tuik/javascripts/libs/modernizr-2.0.6.min.js?1338136888" type="text/javascript"></script>
+    <script src="../tuik/javascripts/libs/modernizr-2.0.6.min.js?1338136888" type="text/javascript"></script>
 
   </head>
 
-  <body class="index">
+  <body class="styleguide styleguide_buttons">
+    <header class="styleguide-header">
+      Styleguide
+    </header>
 
-      <h1>Tuik</h1>
+    <div id="styleguide">
 
-<h2>Widgets</h2>
+      
+      
 
-<ul>
-  <li><a href="/demos/tuik.buttons.html">Buttons</a></li>
-  <li><a href="/demos/tuik.popover.html">Popovers</a></li>
-</ul>
+<div class="styleguide-example">
 
-      <script src="tuik/javascripts/app.js?1338230449" type="text/javascript"></script>
+  <h3>5.1.1 <em>_tuik.buttons.css.scss</em></h3>
+  <div class="styleguide-description">
+    <p>Your standard form button.</p>
+    
+      <ul class="styleguide-modifier">
+        
+          <li><strong>:hover</strong> - Highlights when hovering.</li>
+        
+          <li><strong>:disabled</strong> - Dims the button when disabled.</li>
+        
+          <li><strong>.primary</strong> - Indicates button is the primary action.</li>
+        
+          <li><strong>.smaller</strong> - A smaller button</li>
+        
+      </ul>
+    
+  </div>
+  <div class="styleguide-element">
+      <button class="$modifier_class">Default Button</button>
+
+  </div>
+  
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:hover</span>
+        <button class=" pseudo-class-hover">Default Button</button>
+
+    </div>
+  
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">:disabled</span>
+        <button class=" pseudo-class-disabled">Default Button</button>
+
+    </div>
+  
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.primary</span>
+        <button class=" primary">Default Button</button>
+
+    </div>
+  
+    <div class="styleguide-element styleguide-modifier">
+      <span class="styleguide-modifier-name">.smaller</span>
+        <button class=" smaller">Default Button</button>
+
+    </div>
+  
+
+</div>
+
+
+    </div>
+
+    <script src="../tuik/javascripts/app.js?1338230449" type="text/javascript"></script>
 
     
   </body>
 </html>
+
+

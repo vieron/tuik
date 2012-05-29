@@ -19,6 +19,7 @@
   border:$clickable-border-width solid $clickable-border-color;
   text-shadow:1px 1px 0px rgba(255,255,255,0.4);
   cursor:pointer;
+  line-height:normal;
   
   &.icon {
     padding-left: .8em;
@@ -26,15 +27,22 @@
   }
 }
 
-.btn:hover {
+.btn:hover,
+.btn.active {
   color:$btn-color-hover;
   @include background(  linear-gradient(top, $clickable-gradient-colorStart-hover, $clickable-gradient-colorEnd-hover) );
   text-shadow:1px 1px 0px rgba(255,255,255,0.6);
+  border-color:$clickable-border-color-hover;
+  
+  @include box-shadow(1px 1px 1px rgba(0, 0, 0, 0.05), -1px -1px 1px rgba(0, 0, 0, 0.05));
 }
 
-.btn:active {
-  @include background(  linear-gradient(top, $clickable-gradient-colorEnd, $clickable-gradient-colorStart) );
+.btn.active {
+  @include background(  linear-gradient(top, darken($clickable-gradient-colorStart, 5%), darken($clickable-gradient-colorEnd, 5%)) );
+  @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+  border-right:$clickable-border-width solid $clickable-border-color-hover;
 }
+
 
 
 
@@ -42,19 +50,16 @@
 
 .btn-group {
   @extend .clearfix;
-  border-radius:$clickable-border-radius;
-  border:$clickable-border-width solid $clickable-border-color;
   @extend .inline-block;
-  @include background(  linear-gradient(top, $clickable-gradient-colorStart, $clickable-gradient-colorEnd) );
 }
 
 .btn-group > * {
   @extend .btn;
-  float:left;
-  display:block;
-  border:none;
+  border-right:none;
   border-radius:0;
-  border-right:$clickable-border-width solid $clickable-border-color;
+  float:left;
+  
+  position:relative;
 }
 
 .btn-group > div {
@@ -68,11 +73,23 @@
 }
 
 .btn-group > *:last-child {
-  border-right:none;
+  border-right:$clickable-border-width solid $clickable-border-color;
   border-radius:0 $clickable-border-radius $clickable-border-radius 0;
 }
 
 .btn-group > *:first-child {
   border-radius:$clickable-border-radius 0 0 $clickable-border-radius;
+}
+
+
+.btn-group > *:not(.active):hover,
+.btn-group > *:not(.active):last-child:hover {
+  border-right:$clickable-border-width solid $clickable-border-color-hover;
+  z-index:2;
+  margin-right:-1px;
+}
+
+.btn-group > *:not(.active):last-child:hover{
+  margin-right:0;
 }
 

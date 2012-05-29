@@ -5,21 +5,22 @@ $default-border-radius: 3px;
 $link-color:         #0099FF;
 $link-hover-color:   #0099FF;
 
-$clickable-color:#666666;
-$clickable-color-hover:darken($clickable-color, 2%);
-$clickable-border-color: #999999;
+$clickable-color:#444444;
+$clickable-color-hover: lighten($clickable-color, 1%);
+$clickable-border-color: #D5D5D5;
 $clickable-border-radius: 2px;
 $clickable-border-width: 1px;
-$clickable-border-color-hover: $clickable-border-color;
+$clickable-border-color-hover: darken($clickable-border-color, 6%);
 
-$clickable-gradient-colorStart:#E7E7E7;
-$clickable-gradient-colorEnd: #CCCCCC;
-$clickable-gradient-colorStart-hover:darken($clickable-gradient-colorStart, 2%);
-$clickable-gradient-colorEnd-hover: darken($clickable-gradient-colorEnd, 2%);
+$clickable-gradient-colorStart:#F2F2F2;
+$clickable-gradient-colorEnd: #ECECEC;
+$clickable-gradient-colorStart-hover:lighten($clickable-gradient-colorStart, 2%);
+$clickable-gradient-colorEnd-hover: lighten($clickable-gradient-colorEnd, 2%);
 
 
-$btn-color:#666666;
+$btn-color:#444444;
 $btn-color-hover:darken($btn-color, 2%);
+$btn-border-radius:darken($btn-color, 2%);
 
 $widget-border-width : 1px;
 $widget-border-type : solid;

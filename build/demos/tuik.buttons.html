@@ -39,9 +39,9 @@
 
     <!-- more tags for your 'head' to consider h5bp.com/d/head-Tips -->
 
-    <link href="../tuik/stylesheets/tuik.css?1338070238" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../tuik/stylesheets/tuik.css" media="screen" rel="stylesheet" type="text/css" />
 
-    <script src="../tuik/javascripts/libs/modernizr-2.0.6.min.js?1338044186" type="text/javascript"></script>
+    <script src="../tuik/javascripts/libs/modernizr-2.0.6.min.js?1338136888" type="text/javascript"></script>
 
   </head>
 
@@ -55,6 +55,11 @@
 	
 	
 	  <a class="btn" href="#">Button</a>
+	  
+	  <a class="btn icon" href="#" data-icon="star">Button</a>
+	  
+	  <a class="icon" href="#" data-icon="star"><span>Button</span></a>
+	  
 	  
 	  
 	  <br><br>
@@ -71,20 +76,19 @@
 	  
 	  <span class="btn-group">
       <a href="#">Button</a>
-      <a href="#" class="ico">▼</a>
+      <a href="#" class="icon" data-icon="chevron-down"><span>▼</span></a>
 	  </span>
 	
 	  <span class="btn-group">
-	    <a href="#" class="ico">▼</a>
+	    <a href="#" class="icon" data-icon="chevron-down"><span>▼</span></a>
       <a href="#">Button</a>
 	  </span>
 	  
 	  <span class="btn-group">
-	    <a href="#" class="ico">▼</a>
-	    <a href="#" class="ico">▲</a>
-	    <a href="#" class="ico">◀</a>
-	    <a href="#" class="ico">▶</a>
-	    <a href="#" class="ico"></a>
+	    <a href="#" class="icon" data-icon="chevron-down"><span>▼</span></a>
+	    <a href="#" class="icon" data-icon="chevron-up"><span>▲</span></a>
+	    <a href="#" class="icon" data-icon="chevron-left"><span>◀</span></a>
+	    <a href="#" class="icon" data-icon="chevron-right"><span>▶</span></a>
       <a href="#">Button</a>
 	  </span>
 	
@@ -100,8 +104,8 @@
 	
 	  <div class="btn-group">
       <a href="#">Button</a>
-      <div href="#" class="ico">
-        <a href="#">▼</a>
+      <div>
+        <a href="#" class="icon" data-icon="chevron-down"><span>▼</span></a>
         <div class="popover arrow top">
     	    <header>
     	     <strong>Title</strong>
@@ -124,12 +128,12 @@
 	  
 	  <div class="btn-group">
       <a href="#">Button</a>
-      <div href="#" class="ico">
-        <a href="#">▼</a>
+      <div>
+        <a href="#" class="icon" data-icon="chevron-left"><span>▼</span></a>
         <div class="popover arrow right">
     	    <header>
     	     <strong>Title</strong>
-    	     <a class="ico close" data-icon="a">✖</a>
+    	     <a class="icon close" data-icon="a">✖</a>
     	    </header>
     	    <article>
     	     <h2>Example</h2> 
@@ -147,12 +151,12 @@
 
 	  <div class="btn-group">
       <a href="#">Button</a>
-      <div href="#" class="ico">
-        <a href="#">▼</a>
+      <div>
+        <a href="#" class="icon" data-icon="chevron-up"><span>▼</span></a>
         <div class="popover arrow bottom">
     	    <header>
     	     <strong>Title</strong>
-    	     <a class="ico close" data-icon="a">✖</a>
+    	     <a class="icon close" data-icon="a">✖</a>
     	    </header>
     	    <article>
     	     <h2>Example</h2> 
@@ -172,12 +176,12 @@
 	
 	  <div class="btn-group">
       <a href="#">Button</a>
-      <div href="#" class="ico">
-        <a href="#">▼</a>
+      <div>
+        <a href="#" class="icon" data-icon="chevron-right"><span>▼</span></a>
         <div class="popover arrow left">
     	    <header>
     	     <strong>Title</strong>
-    	     <a class="ico close" data-icon="a">✖</a>
+    	     <a class="icon close" data-icon="a">✖</a>
     	    </header>
     	    <article>
     	     <h2>Example</h2> 
@@ -206,7 +210,7 @@
 	  <div class="popover">
 	    <header>
 	     <strong>Title</strong>
-	     <a class="ico close" data-icon="a">✖</a>
+	     <a class="icon close" data-icon="a">✖</a>
 	    </header>
 	    <article>
 	     <h2>Example</h2> 
@@ -223,7 +227,7 @@
 	  <div class="popover arrow bottom">
 	    <header>
 	     <strong>Title</strong>
-	     <a class="ico close" data-icon="a">✖</a>
+	     <a class="icon close" data-icon="a">✖</a>
 	    </header>
 	    <article>
 	     <h2>Example</h2> 
@@ -239,7 +243,7 @@
 	  <div class="popover arrow top ">
 	    <header>
 	     <strong>Title</strong>
-	     <a class="ico close" data-icon="a">✖</a>
+	     <a class="icon close" data-icon="a">✖</a>
 	    </header>
 	    <article>
 	     <h2>Example</h2> 
@@ -255,7 +259,7 @@
 	  
 </div>
 
-      <script src="../tuik/javascripts/app.js?1338056929" type="text/javascript"></script>
+      <script src="../tuik/javascripts/app.js?1338230449" type="text/javascript"></script>
 
       <script type="text/javascript" charset="utf-8">
     $(function(){
